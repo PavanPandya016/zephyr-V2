@@ -63,7 +63,7 @@ class UserAdmin(BaseUserAdmin):
 )
     add_fieldsets = (
         (None, {
-            "Date": ("created_at"),
+            "fields": ("username", "email", "password1", "password2"),
         }),
     )
 
